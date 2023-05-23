@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PixelEdge Web Development</title>
+  <link rel="icon" href="assets/Brand/icono.ico" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="js/script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <!--<img src="assets/Brand/LogoNav.PNG"  width="50" height="60" alt="Logo de la Empresa">-->
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <!--<li><a href="#valoraciones">Valoraciones</a></li>-->
+            <li><a href="#consejos">Consejos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="contenedor-imagen">
+        <img src="assets/Brand/FotoWebMejor.png" alt="Main Foto">
+      </div>
+      
+      
+  
+  <section id="inicio">
+
+    <h2 class="frase-centrada">Tu solución para sitios web profesionales y personalizados</h2>
+    <a href="#contacto" class="btn">Solicita un presupuesto</a>
+  </section>
+
+  
+  <section id="descripcion" class="seccion-animadaIzq">
+    <div class="container">
+      <h2>Descripción</h2>
+      <p>En nuestra empresa nos especializamos en proporcionar cualquier tipo de página web a precios accesibles y en periodos de tiempo cortos. Ya sea que necesites un sitio web corporativo, una tienda en línea o una plataforma de blog, estamos aquí para ayudarte.</p>
+      <p>Nuestro equipo de profesionales altamente capacitados se encargará de diseñar y desarrollar tu página web según tus requerimientos. Nos enfocamos en brindar soluciones eficientes y de alta calidad para que tu presencia en línea sea exitosa.</p>
+      <p>Trabajamos estrechamente con nuestros clientes, entendiendo sus necesidades y objetivos para entregar resultados excepcionales. Ya sea que estés empezando tu negocio o buscando actualizar tu presencia en línea, estamos aquí para convertir tus ideas en realidad.</p>
+    </div>
+  </section>
+  
+
+  
+  <section id="servicios" class="seccion-animadaDer">
+    <h2>Servicios</h2>
+    <ul>
+      <li>
+        <h3>Diseño Web</h3>
+        <p>Creación de sitios web atractivos y funcionales, adaptados a tus necesidades. Nuestro equipo de diseñadores expertos se encargará de crear una interfaz visualmente impactante que represente la identidad de tu marca.</p>
+      </li>
+      <li>
+        <h3>Desarrollo Web</h3>
+        <p>Programación de sitios web personalizados utilizando las últimas tecnologías. Nuestros desarrolladores altamente capacitados trabajarán en estrecha colaboración contigo para implementar todas las funcionalidades que requieras y garantizar un rendimiento óptimo del sitio.</p>
+      </li>
+      <li>
+        <h3>Optimización SEO</h3>
+        <p>Mejora la visibilidad de tu sitio web en los motores de búsqueda para atraer más visitantes. Implementaremos técnicas de optimización SEO (Search Engine Optimization) para asegurarnos de que tu sitio aparezca en los primeros resultados de búsqueda y atraiga tráfico relevante.</p>
+      </li>
+      <li>
+        <h3>Responsive Design</h3>
+        <p>Garantizamos que tu sitio web se verá y funcionará de manera óptima en todos los dispositivos, incluyendo computadoras de escritorio, tabletas y teléfonos móviles. El diseño responsive es fundamental para ofrecer una experiencia de usuario consistente y accesible en diferentes plataformas.</p>
+      </li>
+    </ul>
+  </section>
+ 
+  
+<!--
+<section id="ejemplos">
+    <h2>Ejemplos</h2>
+    <p>A continuación, puedes ver algunos ejemplos de nuestros trabajos anteriores:</p>
+</section>
+-->
+
+
+  <section id="consejos" class="seccion-animadaIzq">
+    <h2>Consejos</h2>
+    <p>Aquí tienes algunos consejos y detalles importantes que no pueden faltar en una página web:</p>
+    <ul>
+      <li>Utiliza un diseño limpio y atractivo que refleje la identidad de tu marca.</li>
+      <li>Asegúrate de que la navegación sea intuitiva y fácil de usar para los visitantes.</li>
+  <li>Incluye contenido relevante y de calidad que brinde valor a los usuarios.</li>
+  <li>Optimiza la velocidad de carga de la página para una experiencia rápida y fluida.</li>
+  <li>Asegúrate de que tu página sea compatible con diferentes navegadores y dispositivos.</li>
+  <li>Incorpora elementos visuales atractivos, como imágenes de alta calidad y gráficos.</li>
+  <li>Utiliza llamadas a la acción (CTA) claras para guiar a los usuarios hacia los objetivos deseados.</li>
+  <li>Integra botones de redes sociales para fomentar el intercambio de contenido y aumentar la visibilidad en línea.</li>
+  <li>Implementa medidas de seguridad, como certificados SSL, para proteger los datos de los usuarios.</li>
+  <li>Asegúrate de que tu sitio web esté optimizado para los motores de búsqueda (SEO) para aumentar la visibilidad y el tráfico orgánico.</li>
+</ul>
+  </section>
+  
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¡Estamos listos para ayudarte! Completa el siguiente formulario y nos pondremos en contacto contigo. Sin ningún compromiso</p>
+    <form id="contactForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <input type="submit" value="Enviar" class="btn">
+    </form>
+  </section>
+  
+  <footer>
+    <p>Derechos de autor &copy; 2023 PixelEdge Web Development. Todos los derechos reservados.</p>
+  </footer>
+
+  
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+  <script src="js/firebase_config.js"></script>
+  <script src="js/getDataForms.js"></script>
+
+
+
+</body>
+</html>

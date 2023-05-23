@@ -1,0 +1,238 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 30px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .contenedor-imagen {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .contenedor-imagen img {
+    width: 100%;
+    height: auto;
+  }
+
+  .frase-centrada {
+    text-align: center;
+  }
+  
+  
+  section {
+    padding: 40px 20px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  h1,
+  h2{
+    color: #47403b;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  h3 {
+    color: #ff6600;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ff8533;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  /* Media Queries para diseño responsivo */
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    nav ul {
+      flex-wrap: wrap;
+    }
+  
+    nav ul li {
+      margin-bottom: 5px;
+    }
+  
+    section {
+      padding: 20px;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  
+    footer {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  
+  /* Estilos específicos para el formulario de contacto */
+  form {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form input[type="submit"] {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #ff8533;
+  }
+  
+  /* Estilos adicionales */
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+section p {
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+section ul {
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+section li {
+  margin-bottom: 10px;
+}
+
+
+/*ANIMACIONES*/
+
+/*
+@keyframes entrada-seccion {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.seccion-animada {
+  animation: entrada-seccion 0.5s ease;
+}*/
+
+.seccion-animadaDer {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+.seccion-animadaIzq {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+.seccion-animadaDer.animado {
+  opacity: 1;
+  transform: translateX(0);
+}
+.seccion-animadaIzq.animado {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
